@@ -13,7 +13,6 @@
 		74D20F891B2B789500A41894 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D20F871B2B789500A41894 /* Main.storyboard */; };
 		74D20F8B1B2B789500A41894 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D20F8A1B2B789500A41894 /* Images.xcassets */; };
 		74D20F8E1B2B789500A41894 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74D20F8C1B2B789500A41894 /* LaunchScreen.xib */; };
-		74D20F9A1B2B789500A41894 /* OpenInFirefoxClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D20F991B2B789500A41894 /* OpenInFirefoxClientTests.swift */; };
 		74D20FC81B2B926500A41894 /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D20FC71B2B926500A41894 /* OpenInFirefoxControllerSwift.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +38,6 @@
 		74D20F8A1B2B789500A41894 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74D20F8D1B2B789500A41894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		74D20F931B2B789500A41894 /* OpenInFirefoxClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInFirefoxClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74D20F981B2B789500A41894 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74D20F991B2B789500A41894 /* OpenInFirefoxClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenInFirefoxClientTests.swift; sourceTree = "<group>"; };
 		74D20FC71B2B926500A41894 /* OpenInFirefoxControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInFirefoxControllerSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				74D20F801B2B789500A41894 /* OpenInFirefoxClient */,
-				74D20F961B2B789500A41894 /* OpenInFirefoxClientTests */,
 				74D20F7F1B2B789500A41894 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,23 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				74D20F821B2B789500A41894 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		74D20F961B2B789500A41894 /* OpenInFirefoxClientTests */ = {
-			isa = PBXGroup;
-			children = (
-				74D20F991B2B789500A41894 /* OpenInFirefoxClientTests.swift */,
-				74D20F971B2B789500A41894 /* Supporting Files */,
-			);
-			path = OpenInFirefoxClientTests;
-			sourceTree = "<group>";
-		};
-		74D20F971B2B789500A41894 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				74D20F981B2B789500A41894 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74D20F9A1B2B789500A41894 /* OpenInFirefoxClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
