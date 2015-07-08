@@ -16,16 +16,6 @@
 		74D20FC81B2B926500A41894 /* OpenInFirefoxControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D20FC71B2B926500A41894 /* OpenInFirefoxControllerSwift.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		74D20F941B2B789500A41894 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74D20F761B2B789500A41894 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 74D20F7D1B2B789500A41894;
-			remoteInfo = OpenInFirefoxClient;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		7459FBEB1B323CFE002DCC8A /* OpenInFirefoxControllerObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenInFirefoxControllerObjC.h; sourceTree = "<group>"; };
 		7459FBEC1B323CFE002DCC8A /* OpenInFirefoxControllerObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenInFirefoxControllerObjC.m; sourceTree = "<group>"; };
@@ -37,19 +27,11 @@
 		74D20F881B2B789500A41894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74D20F8A1B2B789500A41894 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		74D20F8D1B2B789500A41894 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		74D20F931B2B789500A41894 /* OpenInFirefoxClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenInFirefoxClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D20FC71B2B926500A41894 /* OpenInFirefoxControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenInFirefoxControllerSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74D20F7B1B2B789500A41894 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		74D20F901B2B789500A41894 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				74D20F7E1B2B789500A41894 /* OpenInFirefoxClient.app */,
-				74D20F931B2B789500A41894 /* OpenInFirefoxClientTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,24 +102,6 @@
 			productReference = 74D20F7E1B2B789500A41894 /* OpenInFirefoxClient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		74D20F921B2B789500A41894 /* OpenInFirefoxClientTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 74D20FA01B2B789500A41894 /* Build configuration list for PBXNativeTarget "OpenInFirefoxClientTests" */;
-			buildPhases = (
-				74D20F8F1B2B789500A41894 /* Sources */,
-				74D20F901B2B789500A41894 /* Frameworks */,
-				74D20F911B2B789500A41894 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				74D20F951B2B789500A41894 /* PBXTargetDependency */,
-			);
-			name = OpenInFirefoxClientTests;
-			productName = OpenInFirefoxClientTests;
-			productReference = 74D20F931B2B789500A41894 /* OpenInFirefoxClientTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,10 +113,6 @@
 				TargetAttributes = {
 					74D20F7D1B2B789500A41894 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					74D20F921B2B789500A41894 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 74D20F7D1B2B789500A41894;
 					};
 				};
 			};
@@ -171,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				74D20F7D1B2B789500A41894 /* OpenInFirefoxClient */,
-				74D20F921B2B789500A41894 /* OpenInFirefoxClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,13 +142,6 @@
 				74D20F891B2B789500A41894 /* Main.storyboard in Resources */,
 				74D20F8E1B2B789500A41894 /* LaunchScreen.xib in Resources */,
 				74D20F8B1B2B789500A41894 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		74D20F911B2B789500A41894 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,22 +159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74D20F8F1B2B789500A41894 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		74D20F951B2B789500A41894 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 74D20F7D1B2B789500A41894 /* OpenInFirefoxClient */;
-			targetProxy = 74D20F941B2B789500A41894 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74D20F871B2B789500A41894 /* Main.storyboard */ = {
@@ -353,40 +289,6 @@
 			};
 			name = Release;
 		};
-		74D20FA11B2B789500A41894 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OpenInFirefoxClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenInFirefoxClient.app/OpenInFirefoxClient";
-			};
-			name = Debug;
-		};
-		74D20FA21B2B789500A41894 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = OpenInFirefoxClientTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenInFirefoxClient.app/OpenInFirefoxClient";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,15 +306,6 @@
 			buildConfigurations = (
 				74D20F9E1B2B789500A41894 /* Debug */,
 				74D20F9F1B2B789500A41894 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		74D20FA01B2B789500A41894 /* Build configuration list for PBXNativeTarget "OpenInFirefoxClientTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				74D20FA11B2B789500A41894 /* Debug */,
-				74D20FA21B2B789500A41894 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
