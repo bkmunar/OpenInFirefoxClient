@@ -6,7 +6,6 @@ import Foundation
 import UIKit
 import WebKit
 class ViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let myWebView:UIWebView = UIWebView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
@@ -19,17 +18,17 @@ class ViewController: UIViewController {
         swiftButton.tintColor = UIColor.whiteColor()
         swiftButton.addTarget(self, action: "buttonActionSwift:", forControlEvents: UIControlEvents.TouchUpInside)
 
-        let objcButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
-        objcButton.frame = CGRectMake(100, 300, 200, 50)
-        objcButton.center = CGPoint(x: self.view.center.x, y: self.view.center.y)
-        objcButton.backgroundColor = UIColor.blueColor()
-        objcButton.setTitle("OpenInFirefox with Obj-C", forState: UIControlState.Normal)
-        objcButton.tintColor = UIColor.whiteColor()
-        objcButton.addTarget(self, action: "buttonActionObjc:", forControlEvents: UIControlEvents.TouchUpInside)
+        let objCButton = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+        objCButton.frame = CGRectMake(100, 300, 200, 50)
+        objCButton.center = CGPoint(x: self.view.center.x, y: self.view.center.y)
+        objCButton.backgroundColor = UIColor.blueColor()
+        objCButton.setTitle("OpenInFirefox with Obj-C", forState: UIControlState.Normal)
+        objCButton.tintColor = UIColor.whiteColor()
+        objCButton.addTarget(self, action: "buttonActionObjc:", forControlEvents: UIControlEvents.TouchUpInside)
 
         self.view.addSubview(myWebView)
         self.view.addSubview(swiftButton)
-        self.view.addSubview(objcButton)
+        self.view.addSubview(objCButton)
     }
 
     func buttonActionSwift(sender: UIButton!) {
@@ -41,7 +40,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func buttonActionObjc(sender: UIButton!) {
+    func buttonActionObjC(sender: UIButton!) {
         if let url = NSURL(string: "https://www.youtube.com/results?search_query=hello+world") {
             var controller = OpenInFirefoxControllerObjC()
             if controller.isFirefoxInstalled() {
